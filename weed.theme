@@ -5,7 +5,7 @@
 #  l  `  '  !|   [_ |   [_ |     |
 #   \      / |     T|     T|     |
 #    \_/\_/  l_____jl_____jl_____j
-#     2012-01-04  18:39     v. 4.0
+#     2012-03-13  23:20     v. 4.2
 #
 # theme by rolle (rolle @ QuakeNet)
 # http://rollemaa.org/
@@ -35,6 +35,7 @@
 #
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=~
 # CHANGELOG:
+# 4.2   - Paranneltu kontrastia
 # 4.10  - Myös actionit vaalennettu
 # 4.00  - Kaikki liian tummat korvattu
 #         vaalealla harmaalla: %K| => %K | %W
@@ -292,9 +293,9 @@ formats = {
     kick = "        %r*%K | {channick $0} was %rkicked%K from {channel $1} by {nick $2} ({reason $3})";
     invite = "        %y*%K | {channick_hilight $0} %yinvites%K you to {channel $1}";
     not_invited = "You have not been invited to a channel!";
-    new_topic = "        %y*%K | {channick_hilight $0} %ymuutti kanavan%K {channel $1} topikkia: {hilight $2}";
-    topic_unset = "        %y*%K | {channick_hilight $0} %ypoisti topikin%K kanavalta {channel $1}";
-    your_nick_changed = "        %y*%K | Sinut %ytunnetaan nyt%K nimimerkillä {channick_hilight $1}";
+    new_topic = "        %y*%K | {channick_hilight $0} %ymuutti kanavan%W {channel $1} topikkia: {hilight $2}";
+    topic_unset = "        %y*%K | {channick_hilight $0} %ypoisti topikin%W kanavalta {channel $1}";
+    your_nick_changed = "        %y*%K | Sinut %ytunnetaan nyt%W nimimerkillä {channick_hilight $1}";
     talking_in = "        %p*%K | %W%KPuhut nyt kanavalla {channel $0}";
     not_in_channels = "        %p*%K | %W%KYou are not on any channels";
     current_channel = "        %p*%K | %W%KCurrent channel {channel $0}";
