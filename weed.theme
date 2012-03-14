@@ -189,11 +189,13 @@ abstracts = {
 formats = {
   "fe-common/core" = {
     query_start = "        %g*%K | %gAloitetaan query%W palvelimella {server $1} henkilön {nick $0} kanssa";
-    join = "        %g*%K | %W{channick_hilight $0} %gsaapui%W kanavalle {channel $2}";
-    part = "        %r*%K | %W{channick $0} %rlähti%W kanavalta {channel $2}";
-    quit = "        %r*%K | %W{channick $0} %rpoistui%k %w(%KSyy: {reason $2}%w)";
-    quit_once = "        %r*%K | %W{channick $0} [{chanhost $1}] %rpoistui%W %w(%WSyy: {reason $2}%w)";
-    nick_changed = "        %y*%K | %W{channick_hilight $0} %ytunnetaan nyt nimimerkillä%W {channick_hilight $1}";
+    join = "        %g*%K | %K{channick_hilight $0} %gsaapui%K kanavalle {channel $2}";
+    part = "        %r*%K | %K{channick $0} %rlähti%K kanavalta {channel $2}";
+    quit = "        %r*%K | %K{channick $0} %rpoistui%k %K(%KSyy: {reason $2}%w)";
+    quit_once = "        %r*%K | %K{channick $0} [{chanhost $1}] %rpoistui%K %w(%WSyy: 
+{reason $2}%w)";
+    nick_changed = "        %y*%K | %K{channick_hilight $0} %ytunnetaan nyt 
+nimimerkillä%K {channick_hilight $1}";
 
     own_msg = "{ownmsgnick $2 {ownnick $[-10]0}}%W$1";
     own_msg_channel = "{ownmsgnick $3 {ownnick $[-10]0}{msgchannel $1}}%w%_$2";
