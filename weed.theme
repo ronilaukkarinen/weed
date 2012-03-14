@@ -5,7 +5,6 @@
 #  l  `  '  !|   [_ |   [_ |     |
 #   \      / |     T|     T|     |
 #    \_/\_/  l_____jl_____jl_____j
-#     2012-03-13  23:20     v. 4.2
 #
 # theme by rolle (rolle @ QuakeNet)
 # http://rollemaa.org/
@@ -33,27 +32,6 @@
 # TÄRKEÄÄ! TEEMAN ASENNUSOHJE (ILMAN TÄTÄ TEEMA EI TOIMI OIKEIN):
 # http://pulina.info/arkisto/2010/06/nain-teet-irssista-kauniin/
 #
-#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=~
-# CHANGELOG:
-# 4.2   - Paranneltu kontrastia
-# 4.10  - Myös actionit vaalennettu
-# 4.00  - Kaikki liian tummat korvattu
-#         vaalealla harmaalla: %K| => %K | %W
-#
-# 3.65  - pubmsgme[...] otettu nuoli ">" pois ja nick tasattu
-# 3.6   - Vielä lisää muokkauksia luettavampaan suuntaan. Myös
-#	  privaikkuna muokattu samanlaiseksi kun kaikki muukin.
-# 3.5   - Teemaa muokattu vähän luettavammaksi (myös tekemistä ym.
-#	  ennen erotin "|" ja välit. Timestampin jälkeen olevaa
-#	  väliä lyhennetty.
-# 3.05  - Muokattu pubmsgnick, pubnick, pubmsgmenick, pubmsghinick,
-# 	  ja = "sb_awaybar";
-# 3.00  - Luotu kokonaan uudet kattavat asennusohjeet.
-#         Teemaan ei tehty muutoksia.
-# 2.75e - Ohjeistusta paranneltu.
-# 2.75d - Changelog luotu.
-# 2.75c - Ohjeistusta korjailtu. Ei toiminnallisia muutoksia.
-# 2.75b - Hailaitin näkyvyyttä paranneltu.
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=~
 
 default_color = "-1";
@@ -210,12 +188,12 @@ abstracts = {
 };
 formats = {
   "fe-common/core" = {
-    query_start = "        %g*%K | %gAloitetaan query%K palvelimella {server $1} henkilön {nick $0} kanssa";
-    join = "        %g*%K | {channick_hilight $0} %gsaapui%K kanavalle {channel $2}";
-    part = "        %r*%K | {channick $0} %rlähti%K kanavalta {channel $2}";
+    query_start = "        %g*%K | %gAloitetaan query%W palvelimella {server $1} henkilön {nick $0} kanssa";
+    join = "        %g*%K | {channick_hilight $0} %gsaapui%W kanavalle {channel $2}";
+    part = "        %r*%K | {channick $0} %rlähti%W kanavalta {channel $2}";
     quit = "        %r*%K | {channick $0} %rpoistui%k %w(%KSyy: {reason $2}%w)";
-    quit_once = "        %r*%K | {channick $0} [{chanhost $1}] %rpoistui%K %w(%KSyy: {reason $2}%w)";
-    nick_changed = "        %y*%K | {channick_hilight $0} %ytunnetaan nyt nimimerkillä%K {channick_hilight $1}";
+    quit_once = "        %r*%K | {channick $0} [{chanhost $1}] %rpoistui%W %w(%WSyy: {reason $2}%w)";
+    nick_changed = "        %y*%K | {channick_hilight $0} %ytunnetaan nyt nimimerkillä%W {channick_hilight $1}";
 
     own_msg = "{ownmsgnick $2 {ownnick $[-10]0}}%W$1";
     own_msg_channel = "{ownmsgnick $3 {ownnick $[-10]0}{msgchannel $1}}%w%_$2";
