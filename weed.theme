@@ -194,8 +194,7 @@ formats = {
     quit = "        %r*%K | %K{channick $0} %rpoistui%k %K(%KSyy: {reason $2}%w)";
     quit_once = "        %r*%K | %K{channick $0} [{chanhost $1}] %rpoistui%K %w(%WSyy: 
 {reason $2}%w)";
-    nick_changed = "        %y*%K | %K{channick_hilight $0} %ytunnetaan nyt 
-nimimerkillä%K {channick_hilight $1}";
+    nick_changed = "        %y*%K | %K{channick_hilight $0} %ytunnetaan nyt nimimerkillä%K {channick_hilight $1}";
 
     own_msg = "{ownmsgnick $2 {ownnick $[-10]0}}%W$1";
     own_msg_channel = "{ownmsgnick $3 {ownnick $[-10]0}{msgchannel $1}}%w%_$2";
@@ -275,7 +274,7 @@ nimimerkillä%K {channick_hilight $1}";
     not_invited = "You have not been invited to a channel!";
     new_topic = "        %y*%K | {channick_hilight $0} %ymuutti kanavan%W {channel $1} topikkia: {hilight $2}";
     topic_unset = "        %y*%K | {channick_hilight $0} %ypoisti topikin%W kanavalta {channel $1}";
-    your_nick_changed = "        %y*%K | Sinut %ytunnetaan nyt%W nimimerkillä {channick_hilight $1}";
+    your_nick_changed = "        %y*%K | Sinut %ytunnetaan nyt%K nimimerkillä {channick_hilight $1}";
     talking_in = "        %p*%K | %W%KPuhut nyt kanavalla {channel $0}";
     not_in_channels = "        %p*%K | %W%KYou are not on any channels";
     current_channel = "        %p*%K | %W%KCurrent channel {channel $0}";
