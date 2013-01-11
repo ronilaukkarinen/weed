@@ -30,7 +30,7 @@
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=~
 #
 # TÄRKEÄÄ! TEEMAN ASENNUSOHJE (ILMAN TÄTÄ TEEMA EI TOIMI OIKEIN):
-# http://pulina.info/arkisto/2010/06/nain-teet-irssista-kauniin/
+# http://pulina.fi/arkisto/2010/06/nain-teet-irssista-kauniin/
 #
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=~
 
@@ -192,8 +192,7 @@ formats = {
     join = "        %g*%K | %K{channick_hilight $0} %gsaapui%K kanavalle {channel $2}";
     part = "        %r*%K | %K{channick $0} %rlähti%K kanavalta {channel $2}";
     quit = "        %r*%K | %K{channick $0} %rpoistui%k %K(%KSyy: {reason $2}%w)";
-    quit_once = "        %r*%K | %K{channick $0} [{chanhost $1}] %rpoistui%K %w(%WSyy: 
-{reason $2}%w)";
+    quit_once = "        %r*%K | %K{channick $0} [{chanhost $1}] %rpoistui%K %w(%WSyy: \012{reason $2}%w)";
     nick_changed = "        %y*%K | %K{channick_hilight $0} %ytunnetaan nyt nimimerkillä%K {channick_hilight $1}";
 
     own_msg = "{ownmsgnick $2 {ownnick $[-10]0}}%W$1";
