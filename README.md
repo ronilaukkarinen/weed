@@ -39,23 +39,23 @@ Prequisities
 Installation
 --------------
 
-1. Make backup of your current irssi setup, if you have one, by **cp -Rv ~/.irssi ~/.irssi-backup**. If something goes wrong, you can easily restore it by quitting irssi and running **rm -rf ~/.irssi && mv ~/.irssi-backup ~/.irssi** and running irssi again.
+Make backup of your current irssi setup, if you have one, by **cp -Rv ~/.irssi ~/.irssi-backup**. If something goes wrong, you can easily restore it by quitting irssi and running **rm -rf ~/.irssi && mv ~/.irssi-backup ~/.irssi** and running irssi again.
 
-2. Make sure you are in your home directory by typing **cd ~** and start irssi for the first time (assuming this is clean installation)
+Make sure you are in your home directory by typing **cd ~** and start irssi for the first time (assuming this is clean installation)
 "screen irssi"
 "/save (in irssi, to generate the default config)"
 
-3. You'll see default irssi theme (blue), but get back by pressing **CTRL+A+D**, for now. Clone this repository by using command 
+You'll see default irssi theme (blue), but get back by pressing **CTRL+A+D**, for now. Clone this repository by using command 
 "git clone https://github.com/ronilaukkarinen/weed.git weed-master"
 
 Or if you don't have permissions to install git, run following
 "wget --no-check-certificate https://github.com/ronilaukkarinen/weed/archive/master.tar.gz"
 "tar -xvf master.tar.gz"
 
-5. Copy the files by running 
+Copy the files by running 
 "cp ~/weed-master/weed.theme ~/.irssi/"
 "mkdir -p ~/.irssi/scripts && cp ~/weed-master/modified-scripts/* ~/.irssi/scripts/"
 "cp ~/weed-master/config ~/.irssi/"
 
-6. Go to irssi by **screen -dr** and run
+Go to irssi by **screen -dr** and run
 "/reload"
