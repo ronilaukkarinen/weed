@@ -39,15 +39,15 @@ Prequisities
 Installation
 --------------
 
-1. Make backup of your current irssi setup, if you have one, by **cp -Rv ~/.irssi ~/.irssi-backup**. If something goes wrong, you can easily restore it by quitting irssi and running **rm -rf ~/.irssi && mv ~/.irssi-backup ~/.irssi** and running irssi again.
+Make backup of your current irssi setup, if you have one, by **cp -Rv ~/.irssi ~/.irssi-backup**. If something goes wrong, you can easily restore it by quitting irssi and running **rm -rf ~/.irssi && mv ~/.irssi-backup ~/.irssi** and running irssi again.
 
-2. Make sure you are in your home directory by typing **cd ~** and start irssi for the first time (assuming this is clean installation)
+Make sure you are in your home directory by typing **cd ~** and start irssi for the first time (assuming this is clean installation)
 `screen irssi`
 
 And then in irssi:
 `/save`
 
-3. You'll see default irssi theme (blue), but get back by pressing **CTRL+A+D**, for now. Clone this repository by using command 
+You'll see default irssi theme (blue), but get back by pressing **CTRL+A+D**, for now. Clone this repository by using command 
 `git clone https://github.com/ronilaukkarinen/weed.git weed-master`
 
 Or if you don't have permissions to install git, run following
@@ -57,7 +57,7 @@ And unpack it using
 
 `tar -xvf master.tar.gz`
 
-4. Copy the theme by running
+Copy the theme by running
 `cp ~/weed-master/weed.theme ~/.irssi/`
 
 Scripts by running
@@ -67,6 +67,19 @@ And finally the modified config by running
 
 `cp ~/weed-master/config ~/.irssi/`
 
-5. Then go to irssi by **screen -dr** and run
+Then go to irssi by **screen -dr** and run
 
-`/reload`
+`/reload` and `/run awl.pl`
+
+You will need to edit your colors to get the final touch (screenshot: http://www.pulina.fi/wp-images/weed-varit.png)
+
+In Putty only **ANSI BLACK** is required to be changed to **25 25 25**.
+
+**Basically you are now done!** You can connect to servers and do whatever you like. However...
+
+Because this is a modified config, your nick and name are **yourname**. Please change your nick by using `/nick something` and `/set user_name something` and your real name by `/set real_name Real Name`. Then type `/save` and `/quit` and start `screen irssi` again.
+
+Optionally you can `/run usercount.pl` and `/sbar awl_0 add -before awl_0 -alignment left usercount` and get a nice usercount on the left.
+`/run trackbar.pl` gets you nice bar to separate old and new conversations. If you like it to fit feed more instead of that default grey, run `/set trackbar_string _` and `/set trackbar_style %r`
+
+Really matter of taste, but if you'd like a weed awaybar (big red block in the right), you can add it by `/run awaybar.pl` and `/sbar statusbar add -after erotin -alignment right awaybar` commands. Another truly optional scripts are `/run nicklist.pl` and `/nicklist screen` (enables nicklist) and `/run nickcolor.pl` (every nick in different color).
