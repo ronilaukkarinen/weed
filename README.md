@@ -42,8 +42,8 @@ Installation
 Make backup of your current irssi setup, if you have one, by **cp -Rv ~/.irssi ~/.irssi-backup**. If something goes wrong, you can easily restore it by quitting irssi and running **rm -rf ~/.irssi && mv ~/.irssi-backup ~/.irssi** and running irssi again.
 
 Make sure you are in your home directory by typing **cd ~** and start irssi for the first time (assuming this is clean installation)
-"screen irssi"
-"/save (in irssi, to generate the default config)"
+`screen irssi`
+`/save (in irssi, to generate the default config)`
 
 You'll see default irssi theme (blue), but get back by pressing **CTRL+A+D**, for now. Clone this repository by using command 
 "git clone https://github.com/ronilaukkarinen/weed.git weed-master"
