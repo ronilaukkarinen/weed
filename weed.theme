@@ -44,12 +44,6 @@ default_color = "-1";
 info_eol = "false";
 replaces = { "[]=" = "$*"; };
 
-
-default_color = "-1";
-# Timestamp/servertag to the end, not first
-info_eol = "false";
-replaces = { "[]=" = "$*"; };
-
 abstracts = {
 
 # Disabling client crap
