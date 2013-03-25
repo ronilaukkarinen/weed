@@ -40,7 +40,7 @@
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=~
 
 default_color = "-1";
-# Timestamp/servertag loppuun, ei alkuun
+# Timestamp/servertag to the end, not first
 info_eol = "false";
 replaces = { "[]=" = "$*"; };
 
