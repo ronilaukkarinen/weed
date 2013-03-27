@@ -4,7 +4,9 @@ weed.theme - XChat based theme for irssi
 Designed to be the most beautiful irssi theme in the world.
 --------------
 
-**Weed?** Yeah, I have no idea where I got that from (no, I am not smoking). I guess I was watching the grass grow. Around 2006 or 2007 I was frustrated with all the irssi themes I had tried and decided to start designing my own. Weed was maybe fifth or sixth theme I did. When nothing pleased me, not even my own previous themes, finally the gem was born. I have not used any other irssi theme ever since.
+**Weed?** Yeah, I have no idea where I got that from (no, I am not smoking). I guess I was watching the grass grow. Around 2006 or 2007 I was frustrated with all the irssi themes I had tried and decided to start designing my own. 
+
+Weed was maybe fifth or sixth theme I did. When nothing pleased me, not even my own previous themes, finally the gem was born. I have not used any other irssi theme ever since. For me and many other users weed.theme is the best irssi theme there is.
 
 Feel free to edit to your needs but I would be pleased if you credited or thanked me in some way! (for example /msg rolle at quakenet)
 
