@@ -195,8 +195,8 @@ formats = {
     query_start = "        %g*%K | %gStarting query%W on {server $1} w/ {nick $0}";
     join = "        %g*%K | %K{channick_hilight $0} %gjoined%K {channel $2}";
     part = "        %r*%K | %K{channick $0} %rleft%K {channel $2}";
-    quit = "        %r*%K | %K{channick $0} %rquit%k %w(%WReason: {reason $2}%w)";
-    quit_once = "        %r*%K | %K{channick $0} [{chanhost $1}] %rquit%K %w(%WReason: \012{reason $2}%w)";
+    quit = "        %r*%K | %K{channick $0} %rquit%k %w(%KReason: {reason $2}%w)";
+    quit_once = "        %r*%K | %K{channick $0} [{chanhost $1}] %rquit%K %w(%KReason: \012{reason $2}%w)";
     nick_changed = "        %y*%K | %K{channick_hilight $0} %yis now known as%K {channick_hilight $1}";
 
     own_msg = "{ownmsgnick $2 {ownnick $[-10]0}}%W$1";
