@@ -28,7 +28,7 @@ In case if you want to know what was done before theme ending up in here Github.
 - **2.75e** Tutorial enhanced. 
 - **2.75d** Created changelog. Better hilight.
 
-Prequisities
+Requirements
 --------------
 
 - Linux or unix shell
