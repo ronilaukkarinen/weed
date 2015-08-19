@@ -61,7 +61,7 @@ Really matter of taste, but if you'd like a weed awaybar (big red block in the r
 
 ![Trackbar](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/awaybar.png "Awaybar")
 
-Another truly optional scripts are `/run nicklist.pl` and `/nicklist screen` (enables nicklist) and `/run nickcolor.pl` (every nick in different color).
+Another truly optional scripts are `/run nicklist.pl` and `/nicklist screen` (enables nicklist) and `/run nickcolor.pl` (every nick in different color). Remember to run `/set nickcolor_colors 2 4 5 6 7 10 11 12 13` so you don't see others as the default green your are youself.
 
 History
 --------------
