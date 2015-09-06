@@ -82,7 +82,7 @@ If you prefer seeing nicks on the right side like in mIRC or other GUI clients, 
 
 ##### For tmux
 
-`/script load tmux-nicklist`. Currently tmux version of nicklist doesn't have any configuration and is by default 20% width of the window.
+`/script load tmux-nicklist-portable`. Currently tmux version of nicklist doesn't have any configuration and is by default 20% width of the window.
 
 #### Each nick in different colors
 
