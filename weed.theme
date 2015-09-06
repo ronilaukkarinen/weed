@@ -46,152 +46,152 @@ replaces = { "[]=" = "$*"; };
 
 abstracts = {
 
-# Disabling client crap
-# msglevel_clientcrap = "%p*%K | %W%K$*";
+  # Disabling client crap
+  # msglevel_clientcrap = "%p*%K | %W%K$*";
 
-# For awaybar.pl
-sb_awaybar = " %1 {sb %W$0-} %N";
+  # For awaybar.pl
+  sb_awaybar = " %1 {sb %W$0-} %N";
 
-# For usercount.pl
-sb_usercount = " %0 {sb %B$0} %N ";
-sb_uc_ircops = "%r*$*";
-sb_uc_ops = "%Ro%K$*";
-sb_uc_halfops = "%Bho%b$*";
-sb_uc_voices = "%Gv%K$*";
-sb_uc_normal = "%w$*%K";
-sb_uc_space = " ";
+  # For usercount.pl
+  sb_usercount = " %0 {sb %B$0} %N ";
+  sb_uc_ircops = "%r*$*";
+  sb_uc_ops = "%Ro%K$*";
+  sb_uc_halfops = "%Bho%b$*";
+  sb_uc_voices = "%Gv%K$*";
+  sb_uc_normal = "%w$*%K";
+  sb_uc_space = " ";
 
-line_start = "";
-timestamp = " %_$* ";
-hilight = "$*";
-error = "$*";
-channel = "$*";
-nick = "$*";
-nickhost = "$*";
-server = "$*";
-comment = "$*";
-reason = "{comment $*}";
-mode = "{comment $*}";
-channick_hilight = "$*";
-chanhost_hilight = "{nickhost $*}";
-channick = "$*";
-chanhost = "{nickhost $*}";
-channelhilight = "$*";
-ban = "$*";
+  line_start = "";
+  timestamp = " %_$* ";
+  hilight = "$*";
+  error = "$*";
+  channel = "$*";
+  nick = "$*";
+  nickhost = "$*";
+  server = "$*";
+  comment = "$*";
+  reason = "{comment $*}";
+  mode = "{comment $*}";
+  channick_hilight = "$*";
+  chanhost_hilight = "{nickhost $*}";
+  channick = "$*";
+  chanhost = "{nickhost $*}";
+  channelhilight = "$*";
+  ban = "$*";
 
-# All of below: $0 = mode, $1 = nick
-msgnick = "$0$1- %|";
-ownmsgnick = "{msgnick %G$1%K%_|}%w";
-ownnick = "$*";
+  # All of below: $0 = mode, $1 = nick
+  msgnick = "$0$1- %|";
+  ownmsgnick = "{msgnick %G$1%K%_|}%w";
+  ownnick = "$*";
 
-# v3.05-hilight is now on red background and white text
-# Can be seen better in communicator phone.
-# (if you liked the old fashioned hilight, comment out next lines below and enable the noted ones)
-#
+  # v3.05-hilight is now on red background and white text
+  # Can be seen better in communicator phone.
+  # (if you liked the old fashioned hilight, comment out next lines below and enable the noted ones)
+  #
 
-pubmsgnick = "{msgnick %r$1%K%_|}%w";
-pubnick = "$*";
-pubmsgmenick = "%1%W{msgnick $1-|}";
-menick = "$*%n";
-# $0 = hilight color, $1 = mode, $2 = nick
-pubmsghinick = "%1%W{msgnick $2-|}";
+  pubmsgnick = "{msgnick %r$1%K%_|}%w";
+  pubnick = "$*";
+  pubmsgmenick = "%1%W{msgnick $1-|}";
+  menick = "$*%n";
+  # $0 = hilight color, $1 = mode, $2 = nick
+  pubmsghinick = "%1%W{msgnick $2-|}";
 
-# Got rid of on version 3.05:
-#
-#pubmsgnick = "{msgnick %r$1%K%_|}%w";
-#pubnick = "$*";
-#pubmsgmenick = "%G%K{msgnick $1-%R|}%0%W";
-#menick = "$*%n";
-#pubmsghinick = "%G%K{msgnick $2-%R|}%0%W";
+  # Got rid of on version 3.05:
+  #
+  #pubmsgnick = "{msgnick %r$1%K%_|}%w";
+  #pubnick = "$*";
+  #pubmsgmenick = "%G%K{msgnick $1-%R|}%0%W";
+  #menick = "$*%n";
+  #pubmsghinick = "%G%K{msgnick $2-%R|}%0%W";
 
-msgchannel = ":$*";
-# $0 = nick, $1 = host
-#
-# msn-styled:
-#privmsg = "%:[$0($1-)]";
-privmsg = "[$0($1-)]";
+  msgchannel = ":$*";
+  # $0 = nick, $1 = host
+  #
+  # msn-styled:
+  #privmsg = "%:[$0($1-)]";
+  privmsg = "[$0($1-)]";
 
-#
-# $0 = "msg", 
-# $1 = target nick
-#
+  #
+  # $0 = "msg", 
+  # $1 = target nick
+  #
 
-#
-# msn-styled:
-#ownprivmsg = "%:%w[$0(%1-)]";
-ownprivmsg = "%w[$0(%1-)]";
+  #
+  # msn-styled:
+  #ownprivmsg = "%:%w[$0(%1-)]";
+  ownprivmsg = "%w[$0(%1-)]";
 
-ownprivmsgnick = "{msgnick $*}";
+  ownprivmsgnick = "{msgnick $*}";
 
-#
-# msn-styled privmsgs:
-#ownprivnick = "%B$*%K says:%:";
-#privmsgnick = "%r$*%K says:%:";
-ownprivnick = "%B$*%K%_|";
-privmsgnick = "%r$*%K%_|";
-action_core = "        %C*%K | %C$0- ";
-action = "%C{action_core $*}%W";
-ownaction = "{action $*}";
-ownaction_target = "{action_core $*}:$1 ";
-pvtaction = " (>>>) $* ";
-pvtaction_query = "{action $*}";
-pubaction = "{action $*}";
-ownnotice = "[$0($1-)] ";
-notice = "$*";
-whois = "%# $[8]0 : $1-";
-pubnotice_channel = ":$*";
-# pvtnotice_host = "($*)";
-pvtnotice_host = "";
-servernotice = "%r!$* %K";
-ownctcp = "[$0($1-)] ";
-ctcp = "$*";
-wallop = "$*: ";
-wallop_nick = "$*";
-wallop_action = " * $* ";
-netsplit = "$*";
-netjoin = "$*";
-names_prefix = "        %p*%K | ";
-names_nick = "$0$1- ";
-names_nick_op = "{names_nick $*}";
-names_nick_halfop = "{names_nick $*}";
-names_nick_voice = "{names_nick $*}";
-names_users = "$*";
-names_channel = "%K$*";
-dcc = "$*";
-dccfile = "$*";
-dccownmsg = "[$0($1-)] ";
-dccownnick = "$*";
-dccownquerynick = "$*";
-dccownaction = "{action $*}";
-dccownaction_target = "{action_core $0}:$1 ";
-dccmsg = "[$1-($0)] ";
-dccquerynick = "$*";
-dccaction = " (*dcc*) $* %|";
-sb_background = "%N";
-sb_window_bg = "%k%0";
-sb_default_bg = "%N";
-sb_prompt_bg = "%N";
-sb_info_bg = "%N";
-sb_topic_bg = "%N";
-sbstart = "";
-sbend = " ";
-topicsbstart = "{sbstart $*}";
-topicsbend = "{sbend $*}";
-#prompt = "%r$*%r: ";
-prompt = "";
-sb = "%K$*%K";
-sbmode = "";
-sbaway = "%raway!%n";
-sbservertag = "$0%K";
-sbnickmode = "";
-sb_act_sep = "%w$*%n";
-sb_act_text = "%K$*%n";
-sb_act_msg = "%2%W$*%n";
-sb_act_hilight = "%5%W $0%W$1-%n";
-sb_act_hilight_color = "%5%W$0%W$1-%n";
+  #
+  # msn-styled privmsgs:
+  #ownprivnick = "%B$*%K says:%:";
+  #privmsgnick = "%r$*%K says:%:";
+  ownprivnick = "%B$*%K%_|";
+  privmsgnick = "%r$*%K%_|";
+  action_core = "        %C*%K | %C$0- ";
+  action = "%C{action_core $*}%W";
+  ownaction = "{action $*}";
+  ownaction_target = "{action_core $*}:$1 ";
+  pvtaction = " (>>>) $* ";
+  pvtaction_query = "{action $*}";
+  pubaction = "{action $*}";
+  ownnotice = "[$0($1-)] ";
+  notice = "$*";
+  whois = "%# $[8]0 : $1-";
+  pubnotice_channel = ":$*";
+  # pvtnotice_host = "($*)";
+  pvtnotice_host = "";
+  servernotice = "%r!$* %K";
+  ownctcp = "[$0($1-)] ";
+  ctcp = "$*";
+  wallop = "$*: ";
+  wallop_nick = "$*";
+  wallop_action = " * $* ";
+  netsplit = "$*";
+  netjoin = "$*";
+  names_prefix = "        %p*%K | ";
+  names_nick = "$0$1- ";
+  names_nick_op = "{names_nick $*}";
+  names_nick_halfop = "{names_nick $*}";
+  names_nick_voice = "{names_nick $*}";
+  names_users = "$*";
+  names_channel = "%K$*";
+  dcc = "$*";
+  dccfile = "$*";
+  dccownmsg = "[$0($1-)] ";
+  dccownnick = "$*";
+  dccownquerynick = "$*";
+  dccownaction = "{action $*}";
+  dccownaction_target = "{action_core $0}:$1 ";
+  dccmsg = "[$1-($0)] ";
+  dccquerynick = "$*";
+  dccaction = " (*dcc*) $* %|";
+  sb_background = "%N";
+  sb_window_bg = "%k%0";
+  sb_default_bg = "%N";
+  sb_prompt_bg = "%N";
+  sb_info_bg = "%N";
+  sb_topic_bg = "%N";
+  sbstart = "";
+  sbend = " ";
+  topicsbstart = "{sbstart $*}";
+  topicsbend = "{sbend $*}";
+  #prompt = "%r$*%r: ";
+  prompt = "";
+  sb = "%K$*%K";
+  sbmode = "";
+  sbaway = "%raway!%n";
+  sbservertag = "$0%K";
+  sbnickmode = "";
+  sb_act_sep = "%w$*%n";
+  sb_act_text = "%K$*%n";
+  sb_act_msg = "%2%W$*%n";
+  sb_act_hilight = "%5%W $0%W$1-%n";
+  sb_act_hilight_color = "%5%W$0%W$1-%n";
 };
 formats = {
-"fe-common/core" = {
+  "fe-common/core" = {
     query_start = "        %g*%K | %gStarting query%W on {server $1} w/ {nick $0}";
     join = "        %g*%K | %K{channick_hilight $0} %gjoined%K {channel $2}";
     part = "        %r*%K | %K{channick $0} %rleft%K {channel $2}";
@@ -205,7 +205,7 @@ formats = {
     pubmsg_me_channel = "{pubmsgmenick $3 {menick $[-10]0}{msgchannel $1}}$2";
     pubmsg_hilight = "{pubmsghinick $0 $3 $[-10]1}$2";
     pubmsg_hilight_channel = "{pubmsghinick $0 $4 $[-10]1{msgchannel $2}}$3";
-    pubmsg = "{pubmsgnick $2 {pubnick \00313$[-10]0}}$1";
+    pubmsg = "{pubmsgnick $2 {pubnick $nickcolor$[-10]0}}$1";
     pubmsg_channel = "{pubmsgnick $3 {pubnick $[-10]0}{msgchannel $1}}$2";
 
     #   own_msg = "{ownmsgnick $2 {ownnick $[-10]0}}$1";

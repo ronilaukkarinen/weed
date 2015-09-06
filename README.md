@@ -34,7 +34,7 @@ Installation
 7. Copy custom irssi scripts by running `mkdir -p ~/.irssi/scripts && cp ~/weed-master/scripts/* ~/.irssi/scripts/`
 8. Copy the custom config by running `cp ~/weed-master/config ~/.irssi/`
 9. Go back to irssi with `screen -dr` (`tmux a` in tmux) and type `/reload`.
-10. Run advanced windowlist by typing `/run awl.pl`.
+10. Run advanced windowlist by typing `/script load awl`.
 11. You will need to edit your colors to get the final touch (in Linux it looks like in the picture below)
 
 ![Color settings in Linux](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/weed-colors-instruction.png "Color settings in Linux")
@@ -49,23 +49,48 @@ Because this is a modified config, your nick and name are **yourname** by defaul
 
 1. Please change your nick by using `/nick something` and `/set user_name something`
 2. Set your real name with `/set real_name Real Name`.
-3. Remember to  `/save` and `/quit` and start `screen irssi` again to the settings to come in effect.
+3. Remember to  `/save` and `/quit` and start `screen irssi` / `tmux` again to the settings to come in effect.
 
 ### Optional tweaks
 
-You can `/run usercount.pl` and `/sbar awl_0 add -before awl_0 -alignment left usercount` and get a nice usercount on the left.
+Overall theme can be tweaked with useful scripts.
+
+#### User count on channels
+You can `/script load usercount.pl` and `/sbar awl_0 add -before awl_0 -alignment left usercount` and get a nice usercount on the left. You can add alias for this by `/alias usercount /sbar awl_0 add -before awl_0 -alignment left usercount` so next time usercount is missing, just type `/usercount`.
 
 ![Usercount](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/usercount.png "Usercount")
 
-`/run trackbar.pl` gets you nice bar to separate old and new conversations. If you like it to fit feed more instead of that default grey, run `/set trackbar_string _` and `/set trackbar_style %r` to set it red.
+#### Track last read conversation with trackbar
+
+`/script load trackbar` gets you nice bar to separate old and new conversations. If you like it to fit feed more instead of that default grey, run `/set trackbar_string _` and `/set trackbar_style %r` to set it red.
 
 ![Trackbar](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/trackbar.png "Trackbar")
 
-Really matter of taste, but if you'd like a weed awaybar (big red block in the right), you can add it by `/run awaybar.pl` and `/sbar statusbar add -after erotin -alignment right awaybar` commands. 
+#### Away state in status bar
 
-![Trackbar](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/awaybar.png "Awaybar")
+If you'd like a weed awaybar (big red block in the right), you can add it by `/script load awaybar` and `/sbar statusbar add -after erotin -alignment right awaybar` commands.
 
-Another truly optional scripts are `/run nicklist.pl` and `/nicklist screen` (enables nicklist) and `/run nickcolor.pl` (every nick in different color). Remember to run `/set nickcolor_colors 2 4 5 6 7 10 11 12 13` so you don't see others as the default green your are youself.
+![Awaybar](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/awaybar.png "Awaybar")
+
+#### Nicklist on the right side of the screen
+
+If you prefer seeing nicks on the right side like in mIRC or other GUI clients, do this:
+
+##### For screen
+
+`/script load nicklist` and `/nicklist screen` (enables nicklist). 
+
+##### For tmux
+
+`/script load tmux-nicklist`. Currently tmux version of nicklist doesn't have any configuration and is by default 20% width of the window.
+
+#### Each nick in different colors
+
+To make nicks to distinct more from each other, nickcolor comes pretty handy.
+
+`/script load nickcolor_expando`. For `screen` and non-xterm-256color, run `/set neat_colors rRyYbBmMcC`. For `tmux` and xterm-256color you are good to go and you can see colors with `/neatcolor colors` and add or remove them with `/neatcolor colors add X30` (adds orangish). If you are interested more in 256 colors in irssi, please [read the docs](https://github.com/shabble/irssi-docs/wiki/Irssi-0.8.17#Verifying_the_colours).
+
+![Nickcolor](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/nickcolor_expando.png "Nickcolor")
 
 History
 --------------
