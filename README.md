@@ -62,7 +62,7 @@ You can `/script load usercount.pl` and `/sbar awl_0 add -before awl_0 -alignmen
 
 #### Track last read conversation with trackbar
 
-`/script load trackbar` gets you nice bar to separate old and new conversations. If you like it to fit feed more instead of that default grey, run `/set trackbar_string _` and `/set trackbar_style %r` to set it red.
+`/script load trackbar22` gets you nice bar to separate old and new conversations. If you like it to fit feed more instead of that default grey, run `/set trackbar_string _` and `/set trackbar_style %r` to set it red.
 
 ![Trackbar](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/trackbar.png "Trackbar")
 
