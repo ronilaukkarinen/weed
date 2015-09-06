@@ -11,14 +11,14 @@ weed - XChat based theme for irssi
 Requirements
 --------------
 
-- Linux or unix shell
-- irssi (preferably original irssi that comes with your Linux distribution, not tested on irssi for Windows)
-- wget (usually with every Linux distribution)
-- screen (usually with every Linux distribution)
+- Linux or Unix shell
+- irssi (not tested on irssi for Windows)
+- wget
+- screen or tmux
 - git (optional)
-- nano/pico (you can also use vi, but the tutorial below is for nano)
-- PuttyTray or any command line interface you have in your Linux box, depends are you using shell or your client PC
-- Some patience and basic Linux command line knowledge
+- nano/pico (you can also use vim, but the tutorial below is for nano)
+- Mac OS X Terminal, [ExtraPuTTY](http://www.extraputty.com/) for Windows or any command line interface with SSH or SSH tunneling
+- Perl >= 5.1.4
 
 Installation
 --------------
@@ -26,15 +26,16 @@ Installation
 **I am not responsible if you break your irssi setup**, but the theme should be rather safe to install when following the instructions carefully.
 
 1. Make backup of your current irssi setup, if you have one, by `cp -Rv ~/.irssi ~/.irssi-backup`. If something goes wrong, you can easily restore it by quitting irssi and running `rm -rf ~/.irssi && mv ~/.irssi-backup ~/.irssi` and running irssi again.
-2. Make sure you are in your home directory by typing `cd ~` and start irssi for the first time (assuming this is clean installation): `screen irssi`
+2. Make sure you are in your home directory by typing `cd ~` and start irssi for the first time (assuming this is clean installation): `screen irssi` or if you prefer tmux, run `tmux` and then `irssi`
 3. In irssi, type `/save`
-4. You'll see default irssi theme (blue), but get back by pressing the key combination **CTRL + A + D**, for now
+4. You'll see default irssi theme (blue), but get back by pressing the key combination **CTRL + A + D** (**CTRL + B, then D** in tmux), for now
 5. Clone this repository by using command `git clone https://github.com/ronilaukkarinen/weed.git weed-master` or if you don't have permissions to run/install git, run following: `wget --no-check-certificate https://github.com/ronilaukkarinen/weed/archive/master.tar.gz` and unpack it using `tar -xvf master.tar.gz`
 6. Copy the theme to .irssi folder by running `cp ~/weed-master/weed.theme ~/.irssi/`
 7. Copy custom irssi scripts by running `mkdir -p ~/.irssi/scripts && cp ~/weed-master/scripts/* ~/.irssi/scripts/`
 8. Copy the custom config by running `cp ~/weed-master/config ~/.irssi/`
-9. Go back to irssi with `screen -dr` and type `/reload` and `/run awl.pl`
-10. You will need to edit your colors to get the final touch (in Linux it looks like in the picture below)
+9. Go back to irssi with `screen -dr` (`tmux a` in tmux) and type `/reload`.
+10. Run advanced windowlist by typing `/run awl.pl`.
+11. You will need to edit your colors to get the final touch (in Linux it looks like in the picture below)
 
 ![Color settings in Linux](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/weed-colors-instruction.png "Color settings in Linux")
 
