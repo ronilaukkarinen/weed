@@ -5,6 +5,9 @@ weed - XChat based theme for irssi
 
 ![weed.theme on OS X Mavericks](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/screenshot-mac.png "Screenshot")
 
+![weed.theme on tmux](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/tmux.png "tmux")
+*weed on tmux*
+
 Requirements
 --------------
 
