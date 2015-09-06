@@ -53,7 +53,7 @@ abstracts = {
   sb_awaybar = " %1 {sb %W$0-} %N";
 
   # For usercount.pl
-  sb_usercount = " %0 {sb %B$0} %N ";
+  sb_usercount = " %0 {sb %G$0} %N ";
   sb_uc_ircops = "%r*$*";
   sb_uc_ops = "%Ro%K$*";
   sb_uc_halfops = "%Bho%b$*";
