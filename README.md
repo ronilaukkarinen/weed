@@ -8,6 +8,9 @@ weed - XChat based theme for irssi
 ![weed.theme on tmux](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/tmux.png "tmux")
 *weed on tmux*
 
+![weed.theme solarized](https://raw.githubusercontent.com/her/weed/master/screenshots/SolarizedWeedMac.png)
+*weed solarized*
+
 Requirements
 --------------
 
@@ -16,6 +19,7 @@ Requirements
 - wget
 - screen or tmux
 - git (optional)
+- solarized (optional)
 - nano/pico (you can also use vim, but the tutorial below is for nano)
 - Mac OS X Terminal, [ExtraPuTTY](http://www.extraputty.com/) for Windows or any command line interface with SSH or SSH tunneling
 - Perl >= 5.1.4
@@ -30,7 +34,7 @@ Installation
 3. In irssi, type `/save`
 4. You'll see default irssi theme (blue), but get back by pressing the key combination **CTRL + A + D** (**CTRL + B, then D** in tmux), for now
 5. Clone this repository by using command `git clone https://github.com/ronilaukkarinen/weed.git weed-master` or if you don't have permissions to run/install git, run following: `wget --no-check-certificate https://github.com/ronilaukkarinen/weed/archive/master.tar.gz` and unpack it using `tar -xvf master.tar.gz`
-6. Copy the theme to .irssi folder by running `cp ~/weed-master/weed.theme ~/.irssi/`
+6. Copy your theme of choice to .irssi folder by running `cp ~/weed-master/weed.theme ~/.irssi/` **or** `cp ~/weed-master/solarizedweed.theme ~/.irssi/`
 7. Copy custom irssi scripts by running `mkdir -p ~/.irssi/scripts && cp ~/weed-master/scripts/* ~/.irssi/scripts/`
 8. Copy the custom config by running `cp ~/weed-master/config ~/.irssi/`
 9. Go back to irssi with `screen -dr` (`tmux a` in tmux) and type `/reload`.
