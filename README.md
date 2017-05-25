@@ -3,6 +3,21 @@ weed - XChat based theme for irssi
 
 ### Designed to be the most beautiful irssi theme in the world.
 
+Weed is a very unique irssi theme for those who just don't like the default blue or the themes available.
+
+## Table of contents
+
+1. [Screenshots](#screenshots)
+2. [History](#screenshots)
+3. [Requirements](#requirements)
+4. [Installation](#installation)
+    1. [Please note after installing](#please-note-after-installing)
+    2. [Optional tweaks](#optional-tweaks)
+5. [Old changelog](#old-changelog)
+6. [Contributing and troubleshooting](#contributing-and-troubleshooting)
+
+## Screenshots
+
 ![weed.theme on OS X Mavericks](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/screenshot-mac.png "Screenshot")
 
 ![weed.theme on tmux](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/tmux.png "tmux")
@@ -11,8 +26,17 @@ weed - XChat based theme for irssi
 ![weed.theme solarized](https://raw.githubusercontent.com/her/weed/master/screenshots/SolarizedWeedMac.png)
 *weed solarized*
 
-Requirements
---------------
+## History
+
+**Weed?** Yeah, I have no idea where I got that name from (no, I am not smoking). I guess I was watching the grass grow. Around 2006 or 2007 I was frustrated with all the irssi themes I had tried and decided to start designing my own.
+
+Weed was maybe fifth or sixth theme I did. When nothing pleased me, not even my own previous themes, finally the gem was born. I have not used any other irssi theme ever since. For me and many other users weed.theme is the best irssi theme there is.
+
+Feel free to edit to your needs but I would be pleased if you credited or thanked me in some way! (for example `/msg rolle` at quakenet or `rolle_` at IRCnet, remember to `/whois` if not sure!)
+
+If you like it, [follow me in twitter](http://twitter.com/rolle) to know more about my projects (some of them IRC related).
+
+## Requirements
 
 - Linux or Unix shell
 - irssi (not tested on irssi for Windows)
@@ -24,8 +48,7 @@ Requirements
 - Mac OS X Terminal, [ExtraPuTTY](http://www.extraputty.com/) for Windows or any command line interface with SSH or SSH tunneling
 - Perl >= 5.1.4
 
-Installation
---------------
+## Installation
 
 **I am not responsible if you break your irssi setup**, but the theme should be rather safe to install when following the instructions carefully.
 
@@ -96,19 +119,7 @@ To make nicks to distinct more from each other, nickcolor comes pretty handy.
 
 ![Nickcolor](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/nickcolor_expando.png "Nickcolor")
 
-History
---------------
-
-**Weed?** Yeah, I have no idea where I got that name from (no, I am not smoking). I guess I was watching the grass grow. Around 2006 or 2007 I was frustrated with all the irssi themes I had tried and decided to start designing my own.
-
-Weed was maybe fifth or sixth theme I did. When nothing pleased me, not even my own previous themes, finally the gem was born. I have not used any other irssi theme ever since. For me and many other users weed.theme is the best irssi theme there is.
-
-Feel free to edit to your needs but I would be pleased if you credited or thanked me in some way! (for example `/msg rolle` at quakenet or `rolle_` at IRCnet, remember to `/whois` if not sure!)
-
-If you like it, [follow me in twitter](http://twitter.com/rolle) to know more about my projects (some of them IRC related).
-
-Old changelog
---------------
+## Old changelog
 
 In case if you want to know what was done before theme ending up in here Github.
 
@@ -119,3 +130,7 @@ In case if you want to know what was done before theme ending up in here Github.
 - **3.00** Added whole new tutorial inside the theme. No changes to the theme itself.
 - **2.75e** Tutorial enhanced. 
 - **2.75d** Created changelog. Better hilight.
+
+## Contributing and troubleshooting
+
+If you have ideas about the theme or spot an issue, please let us know. If you have trouble setting the theme up, read this readme carefully again or [open an issue](https://github.com/ronilaukkarinen/weed/issues).
