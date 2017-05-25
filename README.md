@@ -7,6 +7,10 @@ weed - XChat based theme for irssi
 
 Weed is a very unique irssi theme for those who just don't like the default blue or the themes available.
 
+#### README in other languages
+
+- [中文版本](https://github.com/ronilaukkarinen/weed/blob/master/README_CN.md) (thanks to @steve-jokes)
+
 ## Table of contents
 
 1. [Screenshots](#screenshots)
@@ -26,7 +30,7 @@ Weed is a very unique irssi theme for those who just don't like the default blue
 *weed on tmux*
 
 ![weed.theme solarized](https://raw.githubusercontent.com/her/weed/master/screenshots/SolarizedWeedMac.png)
-*weed solarized*
+*weed solarized* (thanks to @her)
 
 ## History
 
