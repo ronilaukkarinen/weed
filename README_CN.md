@@ -32,7 +32,7 @@ weed - 受 XChat 启发的 irssi 主题
 1. 如果你原有设置的话, 请在命令行执行 `cp -Rv ~/.irssi ~/.irssi-backup` 备份你的当前设置. 这样一旦出错, 你可以轻松执行  `rm -rf ~/.irssi && mv ~/.irssi-backup ~/.irssi` 来恢复.
 2. 执行 `cd ~` 确保你处于你的 home 目录, 假设你是第一次安装 irssi, 请通过 `screen irssi` 指令启动 irssi, 如果你更喜欢 tmux,  先执行 `tmux` 再启动 `irssi`
 3. 在 irssi 中执行  `/save` 保存当前设置
-4. 你将看到你的默认主题 (蓝色), 组合点击 **CTRL + A + D** 回到命令行 (tmux 下应该是 **CTRL + B, then D**) 
+4. 你将看到你的默认主题 (蓝色), 组合点击 **CTRL + A + D** 回到命令行 (tmux 下应该是 **CTRL + B +  D**) 
 5. 通过 git 指令克隆仓库 `git clone https://github.com/ronilaukkarinen/weed.git weed-master` , 如果你没有安装 git 的权限, 也可以直接使用 `wget --no-check-certificate https://github.com/ronilaukkarinen/weed/archive/master.tar.gz` 下载, 通过 `tar -xvf master.tar.gz` 解压
 6. 复制你想要的主题 `cp ~/weed-master/weed.theme ~/.irssi/` **或** `cp ~/weed-master/solarizedweed.theme ~/.irssi/`
 7. 复制主题定制的 irssi 脚本: `mkdir -p ~/.irssi/scripts && cp ~/weed-master/scripts/* ~/.irssi/scripts/`
@@ -109,11 +109,11 @@ Weed 可能是我的第五还是第六个主题, 当时没有什么能够取悦�
 
 你可以根据你的需求随意改动这些脚本并发布, 不过如果你能以任何形式赞赏或感谢我, 我会非常开心的! (比如在 quakenet 上  `/msg rolle` 私信我, (我在 IRCnet 上叫 `rolle_` ), 如果不确定是不是我, 可以先  `/whois` 一下!)
 
-If you like it, [follow me in twitter](http://twitter.com/rolle) to know more about my projects (some of them IRC related).
+如果 Ok 的话, 可以[关注我的 twitter](http://twitter.com/rolle) 来获得我的更多项目信息, (有一些是 IRC 相关的).
 
 ## 译者
 
-我是这个 readme 的中文翻译, 我在 freenode 上叫 `memphisw`, 大家可以来告诉我你看到了这篇文章(一般我会在 #linuxba 里, 欢迎来撩).
+我是这个 readme 的中文翻译, 我在 freenode 上叫 `memphisw`, 大家可以来告诉我你看到了这篇文章(一般我会在 #linuxba 里, 欢迎来撩). 也可以关注 [我的微博](http://weibo.com/RunLittleRabbitRun)
 
 I'm chinese translator of this readme, i'm memphisw in freenode, you can come and tell me that you've seen this instruction, i'll be happy. any welcome to join #linuxba on freenode, it'a chinese channel with programmer from tieba.baidu. have fun reading!
 
