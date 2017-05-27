@@ -1,7 +1,31 @@
 weed - 受 XChat 启发的 irssi 主题
 ==============
 
-立志成为世界上最漂亮的 irssi 主题
+
+[![Irssi](https://img.shields.io/badge/tested%20with%20irssi-0.8.21-green.svg?style=flat-square)]() [![GitHub contributors](https://img.shields.io/github/contributors/ronilaukkarinen/weed.svg?style=flat-square)]() [![Github All Releases](https://img.shields.io/github/downloads/ronilaukkarinen/weed/total.svg?style=flat-square)]() [![Twitter Follow](https://img.shields.io/twitter/follow/rolle.svg?style=social&label=Follow)]()
+
+
+
+### 立志成为世界上最漂亮的 irssi 主题.
+
+如果你不喜欢 irssi 其他的主题, Weed 将是你的不二之选.
+
+#### REAMDE 的其他语言
+
+- [中文版本](https://github.com/ronilaukkarinen/weed/blob/master/README_CN.md) (感谢 [@steve-jokes](https://github.com/steve-jokes))	
+
+## 目录
+
+1. [截图展示](#screenshots)
+2. [历史](#screenshots)
+3. [环境要求](#requirements)
+4. [安装](#installation)
+    1. [安装完成后请注意](#please-note-after-installing)
+    2. [可选改进](#optional-tweaks)
+5. [版本变更](#old-changelog)
+6. [贡献和报错](#contributing-and-troubleshooting)
+
+## 截图展示
 
 ![weed.theme on OS X Mavericks](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/screenshot-mac.png "Screenshot")
 
@@ -9,10 +33,20 @@ weed - 受 XChat 启发的 irssi 主题
 *tmux 下的 weed*
 
 ![weed.theme solarized](https://raw.githubusercontent.com/her/weed/master/screenshots/SolarizedWeedMac.png)
-*solarized 主题的 weed*
+*solarized 主题的 weed* (感谢 [@her](https://github.com/her))
 
-环境要求
---------------
+## 历史
+
+**Weed(大麻)?** 是的, 我不知道我为什么取这个名字 (额, 我不抽大麻). 可能我当时刚好看到吧. 差不多 2006, 2007 年的时候, 我对所有的 irssi 主题感到失望, 所以我决定要自己写一个.
+
+Weed 可能是我的第五还是第六个主题, 当时没有什么能够取悦我, 设置我之前写的主题也不行, 最终诞生了它. 从那以后我就再也没有用过其他主题了. 对于我还有其他用户来说, weed 是最好用的一个主题.
+
+你可以根据你的需求随意改动这些脚本并发布, 不过如果你能以任何形式赞赏或感谢我, 我会非常开心的! (比如在 quakenet 上  `/msg rolle` 私信我, (我在 IRCnet 上叫 `rolle_` ), 如果不确定是不是我, 可以先  `/whois` 一下!)
+
+如果 Ok 的话, 可以[关注我的 twitter](http://twitter.com/rolle) 来获得我的更多项目信息, (有一些是 IRC 相关的).
+
+## 环境要求
+
 
 - Linux or Unix shell
 - irssi (还没在 Windows 上测试过)
@@ -100,16 +134,7 @@ Putty 命令行只需要修改 **ANSI BLACK** 成 **25 25 25**.
 
 ![Nickcolor](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/nickcolor_expando.png "Nickcolor")
 
-历史
---------------
 
-**Weed(大麻)?** 是的, 我不知道我为什么取这个名字 (额, 我不抽大麻). 可能我当时刚好看到吧. 差不多 2006, 2007 年的时候, 我对所有的 irssi 主题感到失望, 所以我决定要自己写一个.
-
-Weed 可能是我的第五还是第六个主题, 当时没有什么能够取悦我, 设置我之前写的主题也不行, 最终诞生了它. 从那以后我就再也没有用过其他主题了. 对于我还有其他用户来说, weed 是最好用的一个主题.
-
-你可以根据你的需求随意改动这些脚本并发布, 不过如果你能以任何形式赞赏或感谢我, 我会非常开心的! (比如在 quakenet 上  `/msg rolle` 私信我, (我在 IRCnet 上叫 `rolle_` ), 如果不确定是不是我, 可以先  `/whois` 一下!)
-
-如果 Ok 的话, 可以[关注我的 twitter](http://twitter.com/rolle) 来获得我的更多项目信息, (有一些是 IRC 相关的).
 
 ## 译者
 
@@ -119,7 +144,6 @@ I'm chinese translator of this readme, i'm memphisw in freenode, you can come an
 
 版本变更
 --------------
-
 In case if you want to know what was done before theme ending up in here Github.
 
 - **4.0** *(2013-03-25)* Theme translated in english, added old changelog and tutorial in this Readme. Newer changes and versions will be in commits only.
@@ -129,3 +153,7 @@ In case if you want to know what was done before theme ending up in here Github.
 - **3.00** Added whole new tutorial inside the theme. No changes to the theme itself.
 - **2.75e** Tutorial enhanced. 
 - **2.75d** Created changelog. Better hilight.
+
+## 贡献和报错
+
+如果你对这个主题有什么建议, 或者发现了什么问题. 请告诉我们. 如果你在设置主题的过程中遇到了什么麻烦, 请再仔细检查一遍, 或 [创建一个问题](https://github.com/ronilaukkarinen/weed/issues).
