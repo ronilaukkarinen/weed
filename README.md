@@ -121,7 +121,7 @@ If you prefer seeing nicks on the right side like in mIRC or other GUI clients, 
 
 To make nicks to distinct more from each other, nickcolor comes pretty handy.
 
-`/script load nickcolor_expando`. For `screen` and non-xterm-256color, run `/set neat_colors rRyYbBmMcC`. For `tmux` and xterm-256color you are good to go and you can see colors with `/neatcolor colors` and add or remove them with `/neatcolor colors add X30` (adds orangish). If you are interested more in 256 colors in irssi, please [read the docs](https://github.com/shabble/irssi-docs/wiki/Irssi-0.8.17#Verifying_the_colours).
+`/script load nickcolor_expando`. For `screen` and non-xterm-256color, run `/set neat_colors X30rRX61X6CX3CyX1DcCBX3HX2AbMX3AX42X6M`. For `tmux` and xterm-256color you are good to go and you can see colors with `/neatcolor colors` and add or remove them with `/neatcolor colors add X30` (adds orangish). If you are interested more in 256 colors in irssi, please [read the docs](https://github.com/shabble/irssi-docs/wiki/Irssi-0.8.17#Verifying_the_colours).
 
 ![Nickcolor](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/nickcolor_expando.png "Nickcolor")
 
