@@ -29,7 +29,7 @@ Weed is a very unique irssi theme for those who just don't like the default blue
 ![weed.theme on tmux](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/tmux.png "tmux")
 *weed on tmux*
 
-![weed.theme solarized](https://raw.githubusercontent.com/her/weed/master/screenshots/SolarizedWeedMac.png)
+![weed.theme solarized](https://github.com/ronilaukkarinen/weed/raw/master/screenshots/SolarizedWeedMac.png)
 *weed solarized* (thanks to [@her](https://github.com/her))
 
 ## History
