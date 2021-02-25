@@ -1,10 +1,9 @@
 weed - 受 XChat 启发的 irssi 主题
 ==============
 
-
-[![Irssi](https://img.shields.io/badge/tested%20with%20irssi-0.8.21-green.svg?style=flat-square)]() [![GitHub contributors](https://img.shields.io/github/contributors/ronilaukkarinen/weed.svg?style=flat-square)]() [![Github All Releases](https://img.shields.io/github/downloads/ronilaukkarinen/weed/total.svg?style=flat-square)]() [![Twitter Follow](https://img.shields.io/twitter/follow/rolle.svg?style=social&label=Follow)]()
-
-
+[![Irssi](https://img.shields.io/badge/tested%20with%20irssi-0.8.21-green.svg?style=flat-square)](https://github.com/ronilaukkarinen/weed) 
+[![GitHub contributors](https://img.shields.io/github/contributors/ronilaukkarinen/weed.svg?style=flat-square)](https://github.com/ronilaukkarinen/weed/graphs/contributors) 
+[![Twitter Follow](https://img.shields.io/twitter/follow/rolle.svg?style=social&label=Follow)](https://twitter.com/rolle)
 
 ### 立志成为世界上最漂亮的 irssi 主题.
 
