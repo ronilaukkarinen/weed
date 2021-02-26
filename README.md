@@ -26,12 +26,12 @@ Weed is a very unique irssi theme for those who just don't like the default blue
 
 ## Screenshots
 
-![weed.theme on OS X Mavericks](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/screenshot-mac.png "Screenshot")
+![weed.theme on OS X Mavericks](https://i.imgur.com/2Pvr607.png "Screenshot")
 
-![weed.theme on tmux](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/tmux.png "tmux")
+![weed.theme on tmux](https://i.imgur.com/pdtYQfQ.png "tmux")
 *weed on tmux*
 
-![weed.theme solarized](https://github.com/ronilaukkarinen/weed/raw/master/screenshots/SolarizedWeedMac.png)
+![weed.theme solarized](https://i.imgur.com/Qs9HFIM.png)
 *weed solarized* (thanks to [@her](https://github.com/her))
 
 ## History
@@ -72,7 +72,7 @@ If you like it, [follow me in twitter](http://twitter.com/rolle) to know more ab
 10. Run advanced windowlist by typing `/script load awl`.
 11. You will need to edit your colors to get the final touch (in Linux it looks like in the picture below)
 
-![Color settings in Linux](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/weed-colors-instruction.png "Color settings in Linux")
+![Color settings in Linux](https://i.imgur.com/6kz6jIQ.png "Color settings in Linux")
 
 In Putty only **ANSI BLACK** is required to be changed to **25 25 25**.
 
@@ -93,19 +93,19 @@ Overall theme can be tweaked with useful scripts.
 #### User count on channels
 You can `/script load usercount.pl` and `/sbar awl_0 add -before awl_0 -alignment left usercount` and get a nice usercount on the left. You can add alias for this by `/alias usercount /sbar awl_0 add -before awl_0 -alignment left usercount` so next time usercount is missing, just type `/usercount`.
 
-![Usercount](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/usercount.png "Usercount")
+![Usercount](https://i.imgur.com/Vt1qWMi.png "Usercount")
 
 #### Track last read conversation with trackbar
 
 `/script load trackbar22` gets you nice bar to separate old and new conversations. If you like it to fit feed more instead of that default grey, run `/set trackbar_string _` and `/set trackbar_style %r` to set it red.
 
-![Trackbar](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/trackbar.png "Trackbar")
+![Trackbar](https://i.imgur.com/JgkIAYX.png "Trackbar")
 
 #### Away state in status bar
 
 If you'd like a weed awaybar (big red block in the right), you can add it by `/script load awaybar` and `/sbar statusbar add -after erotin -alignment right awaybar` commands.
 
-![Awaybar](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/awaybar.png "Awaybar")
+![Awaybar](https://i.imgur.com/s3U5ewT.png "Awaybar")
 
 #### Nicklist on the right side of the screen
 
@@ -125,7 +125,7 @@ To make nicks to distinct more from each other, nickcolor comes pretty handy.
 
 `/script load nickcolor_expando`. For `screen` and non-xterm-256color, run `/set neat_colors X30rRX61X6CX3CyX1DcCBX3HX2AbMX3AX42X6M`. For `tmux` and xterm-256color you are good to go and you can see colors with `/neatcolor colors` and add or remove them with `/neatcolor colors add X30` (adds orangish). If you are interested more in 256 colors in irssi, please [read the docs](https://github.com/shabble/irssi-docs/wiki/Irssi-0.8.17#Verifying_the_colours).
 
-![Nickcolor](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/nickcolor_expando.png "Nickcolor")
+![Nickcolor](https://i.imgur.com/vSymKmP.png "Nickcolor")
 
 ## Old changelog
 
