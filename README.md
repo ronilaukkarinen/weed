@@ -1,7 +1,7 @@
 weed - XChat based theme for irssi
 ==============
 
-[![Irssi](https://img.shields.io/badge/tested%20with%20irssi-0.8.21-green.svg?style=flat-square)](https://github.com/ronilaukkarinen/weed) 
+[![Irssi](https://img.shields.io/badge/tested%20with%20irssi-1.2.2-green.svg?style=flat-square)](https://github.com/ronilaukkarinen/weed) 
 [![GitHub contributors](https://img.shields.io/github/contributors/ronilaukkarinen/weed.svg?style=flat-square)](https://github.com/ronilaukkarinen/weed/graphs/contributors) 
 [![Twitter Follow](https://img.shields.io/twitter/follow/rolle.svg?style=social&label=Follow)](https://twitter.com/rolle)
 
