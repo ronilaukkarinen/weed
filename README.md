@@ -1,7 +1,9 @@
 weed - XChat based theme for irssi
 ==============
 
-[![Irssi](https://img.shields.io/badge/tested%20with%20irssi-0.8.21-green.svg?style=flat-square)]() [![GitHub contributors](https://img.shields.io/github/contributors/ronilaukkarinen/weed.svg?style=flat-square)]() [![Twitter Follow](https://img.shields.io/twitter/follow/rolle.svg?style=social&label=Follow)]()
+[![Irssi](https://img.shields.io/badge/tested%20with%20irssi-0.8.21-green.svg?style=flat-square)](https://github.com/ronilaukkarinen/weed) 
+[![GitHub contributors](https://img.shields.io/github/contributors/ronilaukkarinen/weed.svg?style=flat-square)](https://github.com/ronilaukkarinen/weed/graphs/contributors) 
+[![Twitter Follow](https://img.shields.io/twitter/follow/rolle.svg?style=social&label=Follow)](https://twitter.com/rolle)
 
 ### Designed to be the most beautiful irssi theme in the world.
 
