@@ -127,18 +127,6 @@ To make nicks to distinct more from each other, nickcolor comes pretty handy.
 
 ![Nickcolor](https://i.imgur.com/vSymKmP.png "Nickcolor")
 
-## Old changelog
-
-In case if you want to know what was done before theme ending up in here Github.
-
-- **4.0** *(2013-03-25)* Theme translated in english, added old changelog and tutorial in this Readme. Newer changes and versions will be in commits only.
-- **3.6** *(2010-11-27)* Fixes to make theme even more readable. Query layout is now the same than the rest of the windows.
-- **3.5** Readability fixes. Spaces made shorter between separator pipes and the timestamps.
-- **3.05** Edited pubmsgnick, pubnick, pubmsgmenick, pubmsghinick and = "sb_awaybar";
-- **3.00** Added whole new tutorial inside the theme. No changes to the theme itself.
-- **2.75e** Tutorial enhanced. 
-- **2.75d** Created changelog. Better hilight.
-
 ## Contributing and troubleshooting
 
 If you have ideas about the theme or spot an issue, please let us know. If you have trouble setting the theme up, read this readme carefully again or [open an issue](https://github.com/ronilaukkarinen/weed/issues).
