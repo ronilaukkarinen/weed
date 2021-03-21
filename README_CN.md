@@ -93,7 +93,7 @@ Putty 命令行只需要修改 **ANSI BLACK** 成 **25 25 25**.
 通过一些好用的脚本, 你可以继续改进你的主题
 
 #### 频道人数
-你可以通过 `/script load usercount.pl` 和  `/sbar awl_0 add -before awl_0 -alignment left usercount` 指令获得一个漂亮的用户数显示. 也可以自定义一个别名 `/alias usercount /sbar awl_0 add -before awl_0 -alignment left usercount`, 下次用户数不见的时候, 输入 `/usercount` 就行了.
+你可以通过 `/script load usercount` 和  `/sbar awl_0 add -before awl_0 -alignment left usercount` 指令获得一个漂亮的用户数显示. 也可以自定义一个别名 `/alias usercount /sbar awl_0 add -before awl_0 -alignment left usercount`, 下次用户数不见的时候, 输入 `/usercount` 就行了.
 
 ![Usercount](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/usercount.png "Usercount")
 

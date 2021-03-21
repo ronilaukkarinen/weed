@@ -91,7 +91,7 @@ Because this is a modified config, your nick and name are **yourname** by defaul
 Overall theme can be tweaked with useful scripts.
 
 #### User count on channels
-You can `/script load usercount.pl` and `/sbar awl_0 add -before awl_0 -alignment left usercount` and get a nice usercount on the left. You can add alias for this by `/alias usercount /sbar awl_0 add -before awl_0 -alignment left usercount` so next time usercount is missing, just type `/usercount`.
+You can `/script load usercount` and `/sbar awl_0 add -before awl_0 -alignment left usercount` and get a nice usercount on the left. You can add alias for this by `/alias usercount /sbar awl_0 add -before awl_0 -alignment left usercount` so next time usercount is missing, just type `/usercount`.
 
 ![Usercount](https://i.imgur.com/Vt1qWMi.png "Usercount")
 
