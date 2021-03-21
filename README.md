@@ -69,7 +69,7 @@ If you like it, [follow me in twitter](http://twitter.com/rolle) to know more ab
 7. Copy custom irssi scripts by running `mkdir -p ~/.irssi/scripts && cp ~/weed-master/scripts/* ~/.irssi/scripts/`
 8. Copy the custom config by running `cp ~/weed-master/config ~/.irssi/`
 9. Go back to irssi with `screen -dr` (`tmux a` in tmux) and type `/reload`.
-10. Run advanced windowlist by typing `/script load awl`.
+10. Run advanced windowlist by typing `/script load adv_windowlist`.
 11. You will need to edit your colors to get the final touch (in Linux it looks like in the picture below)
 
 ![Color settings in Linux](https://i.imgur.com/6kz6jIQ.png "Color settings in Linux")
@@ -97,7 +97,7 @@ You can `/script load usercount.pl` and `/sbar awl_0 add -before awl_0 -alignmen
 
 #### Track last read conversation with trackbar
 
-`/script load trackbar22` gets you nice bar to separate old and new conversations. If you like it to fit feed more instead of that default grey, run `/set trackbar_string _` and `/set trackbar_style %r` to set it red.
+`/script load trackbar` gets you nice bar to separate old and new conversations. If you like it to fit feed more instead of that default grey, run `/set trackbar_string _` and `/set trackbar_style %r` to set it red.
 
 ![Trackbar](https://i.imgur.com/JgkIAYX.png "Trackbar")
 
@@ -123,7 +123,7 @@ If you prefer seeing nicks on the right side like in mIRC or other GUI clients, 
 
 To make nicks to distinct more from each other, nickcolor comes pretty handy.
 
-`/script load nickcolor_expando`. For `screen` and non-xterm-256color, run `/set neat_colors X30rRX61X6CX3CyX1DcCBX3HX2AbMX3AX42X6M`. For `tmux` and xterm-256color you are good to go and you can see colors with `/neatcolor colors` and add or remove them with `/neatcolor colors add X30` (adds orangish). If you are interested more in 256 colors in irssi, please [read the docs](https://github.com/shabble/irssi-docs/wiki/Irssi-0.8.17#Verifying_the_colours).
+`/script load nickcolor`. For `screen` and non-xterm-256color, run `/set neat_colors X30rRX61X6CX3CyX1DcCBX3HX2AbMX3AX42X6M`. For `tmux` and xterm-256color you are good to go and you can see colors with `/neatcolor colors` and add or remove them with `/neatcolor colors add X30` (adds orangish). If you are interested more in 256 colors in irssi, please [read the docs](https://github.com/shabble/irssi-docs/wiki/Irssi-0.8.17#Verifying_the_colours).
 
 ![Nickcolor](https://i.imgur.com/vSymKmP.png "Nickcolor")
 

@@ -71,7 +71,7 @@ Weed 可能是我的第五还是第六个主题, 当时没有什么能够取悦�
 7. 复制主题定制的 irssi 脚本: `mkdir -p ~/.irssi/scripts && cp ~/weed-master/scripts/* ~/.irssi/scripts/`
 8. 复制主题定制的配置: `cp ~/weed-master/config ~/.irssi/`
 9. 使用 screen 回到 irssi: `screen -dr` (tmux 下使用 `tmux a` ) 输入 `/reload` 重载配置.
-10. 执行 `/script load awl` 获得比较高级的 window 列表
+10. 执行 `/script load adv_windowlist` 获得比较高级的 window 列表
 11. 修改你的 shell 设置来对颜色效果做最后的润色 (Linux 下应该如下图所示)
 
 ![Color settings in Linux](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/weed-colors-instruction.png "Color settings in Linux")
@@ -99,7 +99,7 @@ Putty 命令行只需要修改 **ANSI BLACK** 成 **25 25 25**.
 
 #### 使用横幅记录上次聊到的地方
 
-`/script load trackbar22` 能为你带来一个漂亮的长条来分割未读消息, 如果你不喜欢默认的灰色下划线, 还可以通过  `/set trackbar_string _` 和 `/set trackbar_style %r` 来修改样式.
+`/script load trackbar` 能为你带来一个漂亮的长条来分割未读消息, 如果你不喜欢默认的灰色下划线, 还可以通过  `/set trackbar_string _` 和 `/set trackbar_style %r` 来修改样式.
 
 ![Trackbar](https://raw.githubusercontent.com/ronilaukkarinen/weed/master/screenshots/trackbar.png "Trackbar")
 
@@ -125,7 +125,7 @@ Putty 命令行只需要修改 **ANSI BLACK** 成 **25 25 25**.
 
 为昵称加上不同的颜色, 能够清晰地区分不同的用户.
 
-加载脚本 `/script load nickcolor_expando`. 
+加载脚本 `/script load nickcolor`. 
 
 对于 `screen` and 和非 256 色 xterm 环境, 执行 `/set neat_colors rRyYbBmMcC` 获得部分颜色支持.
 
