@@ -484,8 +484,8 @@ sub get_flags {
 	my ($chatnet, $channel, $nick, $address) = @_;
 	my $flags;
 	no strict 'refs';
-	if (defined %{ 'Irssi::Script::people::' }) {
-		if (defined ($channel)) {
+	if (%{ 'Irssi::Script::people::' }) {
+		if ($channel) {
 			$flags = (&{ 'Irssi::Script::people::find_local_flags' }($chatnet,$channel,$nick,$address));
 		} else {
 			$flags = (&{ 'Irssi::Script::people::find_global_flags' }($chatnet,$nick,$address));
@@ -493,7 +493,7 @@ sub get_flags {
 		$flags = join('',keys(%{$flags}));
 	} else {
 		my $shasta;
-		if (defined %{ 'Irssi::Script::friends_shasta::' }) {
+		if (%{ 'Irssi::Script::friends_shasta::' }) {
 			$shasta = 'friends_shasta';
 		} elsif (defined &{ 'Irssi::Script::friends::get_idx' }) {
 			$shasta = 'friends';
@@ -501,13 +501,15 @@ sub get_flags {
 		if (!$shasta) {
 			return undef;
 		}
-		my $idx = (&{ 'Irssi::Script::'.$shasta.'::get_idx' }($nick,$address));
-		if ($idx == -1) {
-			return '';
-		}
-		$flags = (&{ 'Irssi::Script::'.$shasta.'::get_friends_flags' }($idx,undef));
-		if ($channel) {
-			$flags .= (&{ 'Irssi::Script::'.$shasta.'::get_friends_flags' }($idx,$channel));
+		if (defined &{ 'Irssi::Script::'.$shasta.'::get_idx' }) {
+			my $idx = (&{ 'Irssi::Script::'.$shasta.'::get_idx' }($nick,$address));
+			if ($idx == -1) {
+				return '';
+			}
+			$flags = (&{ 'Irssi::Script::'.$shasta.'::get_friends_flags' }($idx,undef));
+			if ($channel) {
+				$flags .= (&{ 'Irssi::Script::'.$shasta.'::get_friends_flags' }($idx,$channel));
+			}
 		}
 	}
 	return $flags;
@@ -516,10 +518,10 @@ sub get_flags {
 sub is_friend {
 	my ($chatnet, $channel, $nick, $address) = @_;
 	no strict 'refs';
-	if (defined %{ 'Irssi::Script::people::' }) {
+	if (%{ 'Irssi::Script::people::' }) {
 		return (() != &{'Irssi::Script::people::find_users'}($chatnet, $nick, $address));
 		my $flags;
-		if (defined ($channel)) {
+		if ($channel) {
 			$flags = (&{ 'Irssi::Script::people::find_local_flags' }($chatnet,$channel,$nick,$address));
 		} else {
 			$flags = (&{ 'Irssi::Script::people::find_global_flags' }($chatnet,$nick,$address));
@@ -527,7 +529,7 @@ sub is_friend {
 		return ($flags ne ''); # TODO: test this
 	} else {
 		my $shasta;
-		if (defined %{ 'Irssi::Script::friends_shasta::' }) {
+		if (%{ 'Irssi::Script::friends_shasta::' }) {
 			$shasta = 'friends_shasta';
 		} elsif (defined &{ 'Irssi::Script::friends::get_idx' }) {
 			$shasta = 'friends';
@@ -535,8 +537,12 @@ sub is_friend {
 		if (!$shasta) {
 			return undef;
 		}
-		my $idx = (&{ 'Irssi::Script::'.$shasta.'::get_idx' }($nick,$address));
-		return ($idx != -1);
+		my $get_idx_func="Irssi::Script::".$shasta."::get_idx";
+		if (defined &{$get_idx_func}) {
+			my $idx = (&$get_idx_func($nick,$address));
+			return ($idx != -1);
+		}
+		return -1;
 	}
 }	
 
