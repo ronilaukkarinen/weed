@@ -127,6 +127,16 @@ To make nicks to distinct more from each other, nickcolor comes pretty handy.
 
 ![Nickcolor](https://i.imgur.com/vSymKmP.png "Nickcolor")
 
+#### Change hilight color
+
+If you need to change hilight color, refer to [irssi color formats](https://github.com/irssi/irssi/blob/0697e3eaf14ab5c0d6529d883475f327bad59e73/docs/formats.txt) and change this line:
+
+```bash
+pubmsgmenick = "%5%W{msgnick $1-|}";
+```
+
+%5 stands for maroon background color, %W for white text color.
+
 ## Contributing and troubleshooting
 
 If you have ideas about the theme or spot an issue, please let us know. If you have trouble setting the theme up, read this readme carefully again or [open an issue](https://github.com/ronilaukkarinen/weed/issues).
