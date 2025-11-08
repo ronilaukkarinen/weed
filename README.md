@@ -1,9 +1,12 @@
+
+> [!NOTE]
+> This theme is over two decades old and no longer actively maintained. Check newer theme [aeon](https://github.com/ronilaukkarinen/aeon).
+
 weed - XChat based theme for irssi
 ==============
 
 [![Irssi](https://img.shields.io/badge/tested%20with%20irssi-1.2.2-green.svg?style=flat-square)](https://github.com/ronilaukkarinen/weed) 
-[![GitHub contributors](https://img.shields.io/github/contributors/ronilaukkarinen/weed.svg?style=flat-square)](https://github.com/ronilaukkarinen/weed/graphs/contributors) 
-[![Twitter Follow](https://img.shields.io/twitter/follow/rolle.svg?style=social&label=Follow)](https://twitter.com/rolle)
+[![GitHub contributors](https://img.shields.io/github/contributors/ronilaukkarinen/weed.svg?style=flat-square)](https://github.com/ronilaukkarinen/weed/graphs/contributors)
 
 ### Designed to be the most beautiful irssi theme in the world.
 
@@ -24,14 +27,7 @@ Weed is a very unique irssi theme for those who just don't like the default blue
 5. [Old changelog](#old-changelog)
 6. [Contributing and troubleshooting](#contributing-and-troubleshooting)
 
-## Screenshots
-
-![weed.theme on OS X Mavericks](https://i.imgur.com/2Pvr607.png "Screenshot")
-
-![weed.theme on tmux](https://i.imgur.com/pdtYQfQ.png "tmux")
-*weed on tmux*
-
-![weed.theme solarized](https://i.imgur.com/Qs9HFIM.png)
+<img width="824" height="685" alt="image" src="https://github.com/user-attachments/assets/6303e963-799a-45aa-9069-96cc8a443bb6" />
 *weed solarized* (thanks to [@her](https://github.com/her))
 
 ## History
